@@ -56,6 +56,17 @@ $.getJSON("data_dartmouth.json", function (data) {
   });
 
   /** scroll reveal stuff here */
+  ScrollReveal().reveal('#submit-container', { delay: 300, reset: true });
+  ScrollReveal().reveal('.question', { delay: 100 });
+  let labelReveal = {
+    delay: 100,
+    interval: 100,
+    reset: true,
+    origin: 'right',
+    distance: '60px'
+  };
+
+  ScrollReveal().reveal('label', labelReveal);
 
 });
 
